@@ -61,20 +61,53 @@ img{
 {
     float: right;
 }
-.m-nav-title p
+.m-nav-title div
 {
+    position: relative;
     display: inline-block;
     margin-left: 50px;
     line-height: 80px;
     color: #fff;
+    cursor: pointer;
 }
 .m-nav-title img
 {
     width: 16px;
     height: auto;
     margin-left: 10px;
+    transition: all ease 0.3s;
+}
+.u-ul
+{
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+    line-height: 16px;
+    background-color: #000000;
+}
+.u-li
+{
+    padding: 10px;
+}
+.u-li:hover
+{
+    background-color:#2E707A ;
+    transition: all ease 0.3s;
 }
 
+/* css version of navbar pulldown */
+.m-nav-title div:hover > .u-ul
+{
+    z-index: 999;
+}
+.m-nav-title div:hover > img
+{
+    -moz-transform:scaleY(-1);
+    -webkit-transform:scaleY(-1);
+    -o-transform:scaleY(-1);
+    transform:scaleY(-1);
+    transition: all ease 0.3s;
+}
 /* banner */
 .g-bn
 {
