@@ -1,0 +1,209 @@
+/* CSS reset*/
+body {
+    min-width: 960px;
+    font-family: "Microsoft Yahei";
+}
+
+input, textarea, select {
+    font-size: 12px;
+    font-size: 100%;
+    font-family: arial;
+    font-family: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, form {
+    margin: 0;
+}
+
+h4, h5, h6 {
+    font-size: 1em;
+}
+
+ul, ol {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+/*image with no-border*/
+a img {
+    border: 0;
+}
+
+img {
+    border: 0;
+}
+
+.f-cb:before,
+.f-cb:after {
+    content: "";
+    display: table;
+}
+
+.f-cb:after {
+    clear: both;
+}
+
+.f-cb {
+    *zoom: 1;
+}
+
+/* CSS model*/
+
+/* header */
+.g-hd {
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+}
+
+.m-nav {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.m-nav img {
+    height: 80px;
+    width: auto;
+}
+
+.m-nav-title {
+    float: right;
+}
+
+.m-nav-title div {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    line-height: 80px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.m-nav-title img {
+    width: 16px;
+    height: auto;
+    margin-left: 10px;
+    transition: all ease 0.3s;
+}
+
+.u-ul {
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+    line-height: 16px;
+    background-color: #000000;
+}
+
+.u-li {
+    padding: 10px;
+}
+
+.u-li:hover {
+    background-color: #2E707A;
+    transition: all ease 0.3s;
+}
+
+/* css version of navbar pulldown */
+.m-nav-title div:hover > .u-ul {
+    z-index: 999;
+}
+
+.m-nav-title div:hover > img {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    transition: all ease 0.3s;
+}
+
+/* banner */
+.g-bn {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.m-bn-1, .m-bn-2 {
+    flex: 1;
+    width: 50%;
+    height: 260px;
+}
+
+.m-bn-3 {
+    position: absolute;
+    width: 960px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.m-bn-3 h2 {
+    color: rgba(255, 255, 255, .5);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.m-bn-3 h1 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 400;
+}
+
+/* whole main container*/
+.g-ct
+{
+    width: 960px;
+    margin: 20px auto;
+}
+/* left side list */
+.g-li
+{
+    float: left;
+    width: 250px;
+    max-height: 546px;
+    overflow-y: scroll;
+}
+.g-li li
+{
+    padding:10px 0;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+.g-tb
+{
+    float: right;
+    /*width: 650px;*/
+}
+
+.g-tb table
+{
+    border-collapse:collapse;
+}
+
+.g-tb thead
+{
+    background-color: #DDDDDD;
+    text-align: center;
+}
+.g-tb tr:nth-child(even)
+{
+    background-color: #EEEEEE;
+}
+.g-tb td
+{
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+
+/* background */
+.s-bgc-1 {
+    background-image: url("../images/left.png");
+    background-size: 100% 100%;
+}
+
+.s-bgc-2 {
+    background-image: url("../images/right.jpeg");
+    background-size: 100% 100%;
+}
