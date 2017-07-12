@@ -103,7 +103,7 @@ img {
     transition: all ease 0.3s;
 }
 
-/* css version of navbar pulldown */
+/* less version of navbar pulldown */
 .m-nav-title div:hover > .u-ul {
     z-index: 999;
 }
