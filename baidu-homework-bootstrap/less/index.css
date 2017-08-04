@@ -76,13 +76,11 @@ img {
   width: 100%;
 }
 .g-bd .m-bd-lt {
-  width: 65%;
-  float: left;
-  display: flex;
   height: 150px;
+  display: flex;
 }
 .g-bd .m-bd-lt .u-bd {
-  flex: 1 ;
+  flex: 1;
   margin-right: 20px;
   height: 100%;
   position: relative;
@@ -95,16 +93,9 @@ img {
   padding: 0 10px;
   box-sizing: border-box;
   bottom: 0;
+  left: 0;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.4);
-}
-.g-bd hr {
-  width: 65%;
-  float: left;
-}
-.g-bd .m-bd-lb {
-  width: 65%;
-  float: left;
 }
 .g-bd .m-bd-lb .u-bd-lb {
   margin: 10px 0;
@@ -112,29 +103,17 @@ img {
   box-sizing: border-box;
 }
 .g-bd .m-bd-lb .u-bd-lb .u-bd-lbl {
-  width: 40%;
   height: 100%;
-  float: left;
   background-image: url('../img/images.jpeg');
   background-size: 100% 100%;
 }
-.g-bd .m-bd-lb .u-bd-lb .u-bd-lbr {
-  width: 55%;
-  float: right;
-}
 .g-bd .m-bd-rt {
-  width: 33%;
-  float: right;
   height: 100px;
   padding: 30px;
   box-sizing: border-box;
   background-image: url('../img/flower.jpeg');
   background-size: 100% 100%;
   color: #ffffff;
-}
-.g-bd .m-bd-list {
-  width: 33%;
-  float: right;
 }
 .g-bd .m-bd-list .u-bd-list {
   padding: 10px 0;
@@ -162,8 +141,8 @@ footer {
   }
   .g-hd .m-hd {
     position: fixed;
-    width: 100%;
     z-index: 999;
+    width: 100%;
     bottom: 0;
     left: 0;
     background-color: #666666;
@@ -177,23 +156,13 @@ footer {
     margin-bottom: 10px;
   }
   .g-bd {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
     margin-bottom: 30px;
   }
   .g-bd .m-bd-lt {
-    width: 100%;
     height: 100px;
-    grid-row-start: 1;
-    grid-row-end: 2;
   }
   .g-bd .m-bd-lt .u-bd {
     margin: 0 5px;
-  }
-  .g-bd .m-bd-lb {
-    width: 100%;
-    grid-row-start: 3;
-    grid-row-end: 4;
   }
   .g-bd .m-bd-lb .u-bd-lb {
     height: 100px;
@@ -202,15 +171,7 @@ footer {
     display: none;
   }
   .g-bd .m-bd-rt {
-    width: 100%;
     margin-top: 10px;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .g-bd .m-bd-list {
-    width: 100%;
-    grid-row-start: 4;
-    grid-row-end: 5;
   }
   footer {
     display: none;

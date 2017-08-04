@@ -54,31 +54,29 @@ a img {
 .m-nav {
     width: @width;
     margin: 0 auto;
+    img {
+        height: 80px;
+        width: auto;
+    }
 }
 
-.m-nav img {
-    height: 80px;
-    width: auto;
-}
 
 .m-nav-title {
     float: right;
-}
-
-.m-nav-title div {
-    position: relative;
-    display: inline-block;
-    margin-left: 50px;
-    line-height: 80px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.m-nav-title img {
-    width: 16px;
-    height: auto;
-    margin-left: 10px;
-    transition: all ease 0.3s;
+    div {
+        position: relative;
+        display: inline-block;
+        margin-left: 50px;
+        line-height: 80px;
+        color: #fff;
+        cursor: pointer;
+    }
+    img {
+        width: 16px;
+        height: auto;
+        margin-left: 10px;
+        transition: all ease 0.3s;
+    }
 }
 
 .u-ul {
@@ -91,11 +89,10 @@ a img {
 
 .u-li {
     padding: 10px;
-}
-
-.u-li:hover {
-    background-color: @color;
-    transition: all ease 0.3s;
+    &:hover {
+        background-color: @color;
+        transition: all ease 0.3s;
+    }
 }
 
 /* less version of navbar pulldown */
@@ -130,18 +127,16 @@ a img {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-
-.m-bn-3 h2 {
-    color: rgba(255, 255, 255, .5);
-    font-size: 32px;
-    font-weight: 400;
-}
-
-.m-bn-3 h1 {
-    color: #fff;
-    font-size: 44px;
-    font-weight: 400;
+    h1 {
+        color: #fff;
+        font-size: 44px;
+        font-weight: 400;
+    }
+    h2 {
+        color: rgba(255, 255, 255, .5);
+        font-size: 32px;
+        font-weight: 400;
+    }
 }
 
 /* main body first row*/
@@ -169,19 +164,16 @@ a img {
 
 .u-ct-hd {
     float: left;
-}
-
-.u-ct-hd h1, .u-ct-hd h3 {
-    font-weight: 400;
-}
-
-.u-ct-hd h1 {
-    font-size: 48px;
-}
-
-.u-ct-hd h3 {
-    font-size: 24px;
-    color: #c2c2c2;
+    h1,h3 {
+        font-weight: 400;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 24px;
+        color: #c2c2c2;
+    }
 }
 
 .u-ct-img {
@@ -202,15 +194,14 @@ a img {
     width: 100%;
     height: 180px;
     overflow: hidden;
-}
-
-.m-bd-2 p {
-    position: absolute;
-    left: 20px;
-    bottom: 0;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 100;
+    p {
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 100;
+    }
 }
 
 /* less fade in and out */
@@ -238,19 +229,18 @@ a img {
     left: 50%;
     margin-left: -27px;
     bottom: 0;
+    span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, .5);
+    }
+    .f-bgc {
+        background-color: rgba(255, 255, 255, 1);
+    }
 }
 
-.u-bd-dot span {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, .5);
-}
-
-.u-bd-dot .f-bgc {
-    background-color: rgba(255, 255, 255, 1);
-}
 
 /* less slide left and right */
 /*.m-slide {*/
@@ -314,39 +304,40 @@ a img {
     border: 1px solid #d1d1d1;
     border-top: none;
     display: none;
+    p {
+        padding:10px;
+    }
 }
 .f-show
 {
     display: block;
 }
-.u-bd-ct p
-{
-    padding:10px;
-}
+
 
 /* main body fourth row*/
-.m-bd-4 table {
-    font-size: 16px;
-    text-align: center;
-    border-collapse: collapse;
+.m-bd-4 {
+    table {
+        font-size: 16px;
+        text-align: center;
+        border-collapse: collapse;
+        td {
+            width: 25%;
+            height: 50px;
+            border: 1px solid #c2c2c2;
+            border-left: none;
+            border-right: none;
+            &:nth-child(odd) {
+                background-color: #eee;
+            }
+        }
+
+    }
 }
 
-.m-bd-4 table td {
-    width: 25%;
-    height: 50px;
-    border: 1px solid #c2c2c2;
-    border-left: none;
-    border-right: none;
-}
-
-.m-bd-4 td:nth-child(odd) {
-    background-color: #eee;
-}
 
 .m-bd-4 h3 {
     margin: 20px 0;
 }
-
 .m-bd-4 h3,
 .m-bd-4 table > thead,
 .m-bd-4 td:nth-child(1),
@@ -386,14 +377,13 @@ a img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+    select {
+        height: 30px;
+    }
+    input {
+        height: 25px;
+    }
 
-.u-fm-l select {
-    height: 30px;
-}
-
-.u-fm-l input {
-    height: 25px;
 }
 
 .u-fm button {
@@ -443,4 +433,5 @@ footer {
 
 .s-bgc-7 {
     .background("../images/tongji.jpeg");
+}
 }

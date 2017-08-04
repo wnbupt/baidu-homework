@@ -72,12 +72,10 @@ img {
 .g-bd {
     width: 100%;
     .m-bd-lt {
-        width: 65%;
-        float: left;
-        display: flex;
         height: 150px;
+        display: flex;
         .u-bd {
-            flex:1 ;
+            flex: 1;
             margin-right: 20px;
             height: 100%;
             position: relative;
@@ -89,39 +87,27 @@ img {
                 padding: 0 10px;
                 box-sizing: border-box;
                 bottom: 0;
+                left: 0;
                 color: #ffffff;
                 background-color: rgba(0, 0, 0, .4);
             }
         }
     }
-    hr {
-        width: 65%;
-        float: left;
-    }
+
     .m-bd-lb {
-        width: 65%;
-        float: left;
         .u-bd-lb {
             margin: 10px 0;
             height: 150px;
             box-sizing: border-box;
             .u-bd-lbl {
-                width: 40%;
                 height: 100%;
-                float: left;
                 background-image: url('../img/images.jpeg');
                 background-size: 100% 100%;
-            }
-            .u-bd-lbr {
-                width: 55%;
-                float: right;
             }
         }
     }
 
     .m-bd-rt {
-        width: 33%;
-        float: right;
         height: 100px;
         padding: 30px;
         box-sizing: border-box;
@@ -130,8 +116,6 @@ img {
         color: #ffffff;
     }
     .m-bd-list {
-        width: 33%;
-        float: right;
         .u-bd-list {
             padding: 10px 0;
             p {
@@ -162,8 +146,8 @@ footer
         text-align: center;
         .m-hd {
             position: fixed;
-            width: 100%;
             z-index: 999;
+            width: 100%;
             bottom: 0;
             left: 0;
             background-color: #666666;
@@ -178,23 +162,14 @@ footer
         margin-bottom: 10px;
     }
     .g-bd {
-        display: grid;
-        grid-template-rows: auto auto auto auto;
         margin-bottom: 30px;
-
         .m-bd-lt {
-            width: 100%;
             height: 100px;
-            grid-row-start: 1;
-            grid-row-end: 2;
             .u-bd {
                 margin: 0 5px;
             }
         }
         .m-bd-lb {
-            width: 100%;
-            grid-row-start: 3;
-            grid-row-end: 4;
             .u-bd-lb {
                 height: 100px;
             }
@@ -203,15 +178,7 @@ footer
             display: none;
         }
         .m-bd-rt {
-            width: 100%;
             margin-top: 10px;
-            grid-row-start: 2;
-            grid-row-end: 3;
-        }
-        .m-bd-list {
-            width: 100%;
-            grid-row-start: 4;
-            grid-row-end: 5;
         }
     }
 
