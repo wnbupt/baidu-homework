@@ -1,0 +1,220 @@
+/* CSS reset*/
+body {
+    font-family: "Microsoft Yahei";
+    background-color: #DEDEDE;
+}
+
+input, textarea, select {
+    font-size: 12px;
+    font-size: 100%;
+    font-family: arial;
+    font-family: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, form {
+    margin: 0;
+}
+
+h4, h5, h6 {
+    font-size: 1em;
+}
+
+ul, ol {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+/*image with no-border*/
+a img {
+    border: 0;
+}
+
+img {
+    border: 0;
+}
+
+.f-cb:before,
+.f-cb:after {
+    content: "";
+    display: table;
+}
+
+.f-cb:after {
+    clear: both;
+}
+
+.f-cb {
+    *zoom: 1;
+}
+
+/* CSS model*/
+.g-hd {
+    width: 100%;
+    height: 50px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 50px;
+}
+.m-hd {
+    float: right;
+}
+
+.g-bn {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    background-image: url('../img/WechatIMG161.jpeg');
+    background-size: 100% 100%;
+}
+
+.g-bd {
+    width: 100%;
+    .m-bd-lt {
+        width: 65%;
+        float: left;
+        display: flex;
+        height: 150px;
+        .u-bd {
+            flex:1 ;
+            margin-right: 20px;
+            height: 100%;
+            position: relative;
+            background-image: url('../img/images.jpeg');
+            background-size: 100% 100%;
+            .u-bd-down {
+                width: 100%;
+                position: absolute;
+                padding: 0 10px;
+                box-sizing: border-box;
+                bottom: 0;
+                color: #ffffff;
+                background-color: rgba(0, 0, 0, .4);
+            }
+        }
+    }
+    hr {
+        width: 65%;
+        float: left;
+    }
+    .m-bd-lb {
+        width: 65%;
+        float: left;
+        .u-bd-lb {
+            margin: 10px 0;
+            height: 150px;
+            box-sizing: border-box;
+            .u-bd-lbl {
+                width: 40%;
+                height: 100%;
+                float: left;
+                background-image: url('../img/images.jpeg');
+                background-size: 100% 100%;
+            }
+            .u-bd-lbr {
+                width: 55%;
+                float: right;
+            }
+        }
+    }
+
+    .m-bd-rt {
+        width: 33%;
+        float: right;
+        height: 100px;
+        padding: 30px;
+        box-sizing: border-box;
+        background-image: url('../img/flower.jpeg');
+        background-size: 100% 100%;
+        color: #ffffff;
+    }
+    .m-bd-list {
+        width: 33%;
+        float: right;
+        .u-bd-list {
+            padding: 10px 0;
+            p {
+                font-size: 12px;
+                color: #91918A;
+            }
+        }
+    }
+}
+
+footer
+{
+    width: 100%;
+    height: 120px;
+    padding: 20px 0;
+    background-color: #666666;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+    .g-hd {
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        .m-hd {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: #666666;
+            display: flex;
+            span {
+                flex: 1;
+            }
+        }
+    }
+    .g-bn {
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    .g-bd {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        margin-bottom: 30px;
+
+        .m-bd-lt {
+            width: 100%;
+            height: 100px;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            .u-bd {
+                margin: 0 5px;
+            }
+        }
+        .m-bd-lb {
+            width: 100%;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            .u-bd-lb {
+                height: 100px;
+            }
+        }
+        hr {
+            display: none;
+        }
+        .m-bd-rt {
+            width: 100%;
+            margin-top: 10px;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .m-bd-list {
+            width: 100%;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+    }
+
+    footer {
+        display: none;
+    }
+}
